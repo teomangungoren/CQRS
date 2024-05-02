@@ -25,6 +25,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-redis")
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.retry:spring-retry")
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
