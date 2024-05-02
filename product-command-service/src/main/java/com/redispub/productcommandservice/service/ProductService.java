@@ -22,7 +22,7 @@ public class ProductService {
     private final ChannelTopic topic;
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductService.class);
 
-
+    @Retryable(maxAttempts = 3,backoff = @org.springframework.retry.annotation.Backoff(delay = 1000))
     public Product saveProduct(ProductCommand productCommand) {
        Product product = mapToProduct(productCommand);
        product = productRepository.save(product);
@@ -30,7 +30,6 @@ public class ProductService {
        return product;
     }
 
-    @Retryable(maxAttempts = 3,backoff = @org.springframework.retry.annotation.Backoff(delay = 1000))
     private void publishEvent(Product product){
         LOGGER.info("Publishing event: {} to channel: {}", product, topic.getTopic());
         Long id = redisTemplate.convertAndSend(topic.getTopic(),product);
