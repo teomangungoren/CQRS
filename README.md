@@ -5,7 +5,7 @@ Additionally, we've applied the @Retryable annotation to handle any failures tha
 Our main goal here was to implement the CQRS pattern, though a much more complex scenario could be envisioned, of course.
 
 
-![Ekran görüntüsü 2024-04-26 094444](https://github.com/teomangungoren/cqrs/assets/105017822/bf4333c2-2fd7-44a9-9128-a97750668ed4)
+![Ekran görüntüsü 2024-05-02 223906](https://github.com/teomangungoren/cqrs/assets/105017822/4a02e911-0e9d-4825-b3f3-15a9e3ba4323)
 ![Ekran görüntüsü 2024-05-02 224307](https://github.com/teomangungoren/cqrs/assets/105017822/ad4c4427-2f98-4b98-b15d-20aa6e185aa4)
 ![Ekran görüntüsü 2024-05-02 224324](https://github.com/teomangungoren/cqrs/assets/105017822/71460148-5a9b-4187-b6a0-cdc69e10bfad)
 
