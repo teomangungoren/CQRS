@@ -1,0 +1,22 @@
+server:
+  port: 9091
+spring:
+  data:
+    mongodb:
+      database: product-query
+      host: localhost
+      port: 27019
+      authentication-database: admin
+      username: root
+      password: example
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+redis:
+  pubsub:
+    topic: product_event

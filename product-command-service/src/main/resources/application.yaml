@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  data:
+    mongodb:
+      database: products
+      host: localhost
+      port: 27018
+      username: root
+      password: example
+      authentication-database: admin
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+redis:
+  pubsub:
+    topic: product_event
+
